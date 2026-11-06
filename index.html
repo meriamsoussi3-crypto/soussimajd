@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجد الدين سوسي | سباك صحي وفني تدفئة مركزية</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131b2e',
+                        accentGold: '#d97706',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Cairo & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glass-card {
+            background: rgba(19, 27, 46, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 min-h-screen selection:bg-accentGold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentGold to-amber-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    م
+                </div>
+                <div>
+                    <span class="block font-bold text-lg tracking-wide text-white" data-ar="مجد الدين سوسي" data-fr="Majd Eddine Soussi">مجد الدين سوسي</span>
+                    <span class="block text-xs text-accentCyan font-medium" data-ar="حرفي مستقل - سباك" data-fr="Artisan Indépendant">حرفي مستقل - سباك</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-accentGold transition-colors" data-ar="عن المهني" data-fr="À propos">عن المهني</a>
+                <a href="#services" class="hover:text-accentGold transition-colors" data-ar="المهارات والخدمات" data-fr="Compétences">المهارات والخدمات</a>
+                <a href="#experience" class="hover:text-accentGold transition-colors" data-ar="الخبرات المهنية" data-fr="Expériences">الخبرات المهنية</a>
+                <a href="#education" class="hover:text-accentGold transition-colors" data-ar="التكوين والتعليم" data-fr="Formation">التكوين والتعليم</a>
+                <a href="#contact" class="hover:text-accentGold transition-colors" data-ar="اتصل بي" data-fr="Contact">اتصل بي</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <button id="langToggle" onclick="toggleLanguage()" class="px-3 py-1.5 rounded-lg bg-gray-800/80 hover:bg-gray-700 text-xs font-semibold text-accentGold border border-gray-700 transition-all flex items-center gap-1.5">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="langText">Français</span>
+                </button>
+                <a href="tel:+21628264733" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-accentGold to-amber-600 text-white font-semibold text-sm shadow-lg shadow-amber-600/20 hover:brightness-110 transition-all">
+                    <i class="fa-solid fa-phone"></i>
+                    <span data-ar="اتصال سريع" data-fr="Appeler">اتصال سريع</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/10 via-darkBg to-darkBg pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-start">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-accentGold text-xs font-semibold shadow-inner">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-ar="أكثر من 8 سنوات من الخبرة المهنية" data-fr="Plus de 8 ans d'expérience">أكثر من 8 سنوات من الخبرة المهنية</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        <span data-ar="مجد الدين سوسي" data-fr="Majd Eddine Soussi">مجد الدين سوسي</span>
+                    </h1>
+
+                    <p class="text-xl sm:text-2xl font-medium text-accentCyan">
+                        <span data-ar="سباك صحي – فني تدفئة | مُركب تدفئة مركزية" data-fr="Plombier Sanitaire – Chauffagiste | Installateur en Chauffage Central">سباك صحي – فني تدفئة | مُركب تدفئة مركزية</span>
+                    </p>
+
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-ar="حرفي مستقل، يحمل رخصة (Patente)، متخصص في التركيبات الصحية، التدفئة المركزية، التجديد والصيانة لمختلف الورشات السكنية، التجارية والصناعية باحترافية تامة." data-fr="Artisan indépendant, titulaire d'une patente, spécialisé dans les installations sanitaires, le chauffage central, la rénovation et la maintenance.">
+                        حرفي مستقل، يحمل رخصة (Patente)، متخصص في التركيبات الصحية، التدفئة المركزية، التجديد والصيانة لمختلف الورشات السكنية، التجارية والصناعية باحترافية تامة.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="px-6 py-3 rounded-xl bg-accentGold text-white font-bold shadow-lg shadow-amber-600/30 hover:bg-amber-600 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-ar="تواصل معي الآن" data-fr="Contactez-moi">تواصل معي الآن</span>
+                        </a>
+                        <a href="tel:+21628264733" class="px-6 py-3 rounded-xl glass-card hover:bg-gray-800 text-white font-semibold border border-gray-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-accentCyan"></i>
+                            <span>+216 28 264 733</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-accentGold to-accentCyan rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border-2 border-gray-700/80 shadow-2xl bg-cardBg">
+                            <!-- اسم الصورة مطابق تماماً لما تم رفعه على جيت هب -->
+                            <img src="1793907387911.jpg" alt="مجد الدين سوسي" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Skills Section -->
+    <section id="services" class="py-20 bg-darkBg/50 relative border-t border-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4" data-ar="المهارات والخدمات التقنية" data-fr="Compétences & Services">المهارات والخدمات التقنية</h2>
+                <div class="w-24 h-1.5 bg-accentGold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 text-base" data-ar="خبرة ميدانية واسعة في تنفيذ ومتابعة كافة الأعمال الصحية وشبكات التدفئة وفق أعلى معايير الجودة والسلامة." data-fr="Une vaste expérience pratique dans l'exécution et le suivi de tous les travaux sanitaires et de chauffage selon les normes les plus strictes.">خبرة ميدانية واسعة في تنفيذ ومتابعة كافة الأعمال الصحية وشبكات التدفئة وفق أعلى معايير الجودة والسلامة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-accentGold text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="السباكة الصحية" data-fr="Plomberie Sanitaire">السباكة الصحية</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="تنفيذ التركيبات الصحية الكاملة للمنازل، الشقق، المحلات التجارية والمنشآت الصناعية." data-fr="Réalisation des installations sanitaires complètes (maisons, appartements, commerces, locaux industriels).">تنفيذ التركيبات الصحية الكاملة للمنازل، الشقق، المحلات التجارية والمنشآت الصناعية.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-accentCyan text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="التدفئة المركزية" data-fr="Chauffage Central">التدفئة المركزية</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="تركيب وصيانة أنظمة التدفئة المركزية وسخانات المياه والغلايات بكفاءة عالية." data-fr="Installation et entretien des systèmes de chauffage, chauffe-eaux et chaudières.">تركيب وصيانة أنظمة التدفئة المركزية وسخانات المياه والغلايات بكفاءة عالية.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-accentGold text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="شبكات المياه والصرف" data-fr="Réseaux d'eau & Évacuation">شبكات المياه والصرف</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="تركيب شبكات المياه الباردة والساخنة وشبكات الصرف الصحي باحترافية." data-fr="Installation des réseaux d'eau froide et chaude et d'évacuation.">تركيب شبكات المياه الباردة والساخنة وشبكات الصرف الصحي باحترافية.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-accentCyan text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="كشف وإصلاح التسربات" data-fr="Détection & Réparation des fuites">كشف وإصلاح التسربات</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="كشف تسربات المياه وإصلاح الأعطال بدقة، والصيانة الوقائية والتصحيحية." data-fr="Détection et réparation des fuites d'eau, maintenance préventive et corrective.">كشف تسربات المياه وإصلاح الأعطال بدقة، والصيانة الوقائية والتصحيحية.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-accentGold text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="تجديد الحمامات والمطابخ" data-fr="Rénovation">تجديد الحمامات والمطابخ</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="أعمال التجديد المتكاملة، أعمال العزل المائي، ووضع الديربيجوم (Derbigum)." data-fr="Rénovation de salles de bains et cuisines, travaux d'étanchéité et pose de Derbigum.">أعمال التجديد المتكاملة، أعمال العزل المائي، ووضع الديربيجوم (Derbigum).</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-accentGold/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-accentCyan text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="قراءة المخططات التقنية" data-fr="Plans techniques">قراءة المخططات التقنية</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-ar="قراءة وفهم المخططات الهندسية والتقنية، مع احترام معايير السلامة والمواعيد." data-fr="Lecture des plans techniques, respect des normes de sécurité et des délais.">قراءة وفهم المخططات الهندسية والتقنية، مع احترام معايير السلامة والمواعيد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4" data-ar="الخبرات المهنية" data-fr="Expériences Professionnelles">الخبرات المهنية</h2>
+                <div class="w-24 h-1.5 bg-accentGold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-accentGold relative">
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white" data-ar="سباك حرفي مستقل (Artisan Plombier Indépendant)" data-fr="Artisan Plombier Indépendant">سباك حرفي مستقل (Artisan Plombier Indépendant)</h3>
+                            <p class="text-accentCyan font-medium mt-1" data-ar="حاصل على رخصة (Patente) — بني خيار، نابل، تونس" data-fr="Titulaire d'une patente — Béni Khiar, Nabeul, Tunisie">حاصل على رخصة (Patente) — بني خيار، نابل، تونس</p>
+                        </div>
+                        <span class="px-4 py-1.5 rounded-full bg-accentGold/10 text-accentGold border border-accentGold/20 font-bold text-sm">
+                            2016 – <span data-ar="اليوم" data-fr="Aujourd'hui">اليوم</span>
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-gray-300 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-accentGold mt-1"></i>
+                            <span data-ar="إنجاز التركيبات الصحية الكاملة للمنازل والشقق والمحلات التجارية والمساحات الصناعية." data-fr="Réalisation des installations sanitaires complètes (maisons, appartements, commerces, locaux industriels).">إنجاز التركيبات الصحية الكاملة للمنازل والشقق والمحلات التجارية والمساحات الصناعية.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-accentGold mt-1"></i>
+                            <span data-ar="تركيب شبكات المياه الباردة والساخنة وشبكات الصرف الصحي والتدفئة المركزية." data-fr="Installation des réseaux d'eau froide et chaude, d'évacuation et chauffage central.">تركيب شبكات المياه الباردة والساخنة وشبكات الصرف الصحي والتدفئة المركزية.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-accentGold mt-1"></i>
+                            <span data-ar="أعمال التجديد الشاملة للحمامات والمطابخ وكشف وإصلاح التسربات المائية." data-fr="Rénovation de salles de bains et cuisines, détection et réparation des fuites d'eau.">أعمال التجديد الشاملة للحمامات والمطابخ وكشف وإصلاح التسربات المائية.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-accentGold mt-1"></i>
+                            <span data-ar="الصيانة الوقائية والتصحيحية وتقديم الاستشارات التقنية لضمان رضا العملاء." data-fr="Maintenance préventive et corrective, conseil technique et suivi de la satisfaction des clients.">الصيانة الوقائية والتصحيحية وتقديم الاستشارات التقنية لضمان رضا العملاء.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Training Section -->
+    <section id="education" class="py-20 bg-darkBg/50 border-t border-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4" data-ar="التكوين والتعليم" data-fr="Formation">التكوين والتعليم</h2>
+                <div class="w-24 h-1.5 bg-accentGold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Education Item -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-lg bg-accentCyan/10 text-accentCyan font-bold text-sm">2011</span>
+                        <i class="fa-solid fa-graduation-cap text-2xl text-accentGold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="شهادة الكفاءة المهنية في السباكة والتدفئة" data-fr="CAP Plomberie Sanitaire et Chauffage">شهادة الكفاءة المهنية في السباكة والتدفئة</h3>
+                    <p class="text-gray-400 text-sm" data-ar="مركز قطاع التكوين في البناء بسليمان - تونس" data-fr="Centre sectoriel de formation dans le bâtiment de Soliman - Tunisie">مركز قطاع التكوين في البناء بسليمان - تونس</p>
+                </div>
+
+                <!-- Training Item -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-lg bg-accentGold/10 text-accentGold font-bold text-sm">C.E.F.E</span>
+                        <i class="fa-solid fa-award text-2xl text-accentCyan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-ar="تكوين متخصص في ريادة الأعمال وإدارة المشاريع" data-fr="Formation C.E.F.E">تكوين متخصص في ريادة الأعمال وإدارة المشاريع</h3>
+                    <p class="text-gray-400 text-sm mb-3" data-ar="ريادة الأعمال، إدارة المشاريع، إدارة العمل المستقل" data-fr="Entrepreneuriat, Gestion de projets, Gestion du travail indépendant">ريادة الأعمال، إدارة المشاريع، إدارة العمل المستقل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4" data-ar="معلومات التواصل" data-fr="Coordonnées">معلومات التواصل</h2>
+                <div class="w-24 h-1.5 bg-accentGold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400" data-ar="متاح للعمل الفوري والمشاريع داخل تونس وخارجها." data-fr="Disponible immédiatement et mobile pour travailler à l'étranger.">متاح للعمل الفوري والمشاريع داخل تونس وخارجها.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Phone -->
+                <a href="tel:+21628264733" class="glass-card p-6 rounded-2xl flex items-center gap-4 hover:border-accentGold transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-accentGold/10 flex items-center justify-center text-accentGold text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-gray-400 mb-1" data-ar="الهاتف" data-fr="Téléphone">الهاتف</span>
+                        <span class="font-bold text-white text-lg dir-ltr">+216 28 264 733</span>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:soussimajd45@gmail.com" class="glass-card p-6 rounded-2xl flex items-center gap-4 hover:border-accentGold transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-accentCyan/10 flex items-center justify-center text-accentCyan text-2xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-gray-400 mb-1" data-ar="البريد الإلكتروني" data-fr="E-mail">البريد الإلكتروني</span>
+                        <span class="font-bold text-white text-sm sm:text-base">soussimajd45@gmail.com</span>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <div class="glass-card p-6 rounded-2xl flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-accentGold text-2xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-gray-400 mb-1" data-ar="العنوان" data-fr="Adresse">العنوان</span>
+                        <span class="font-bold text-white text-sm" data-ar="بني خيار، نابل، تونس" data-fr="Béni Khiar, Nabeul, Tunisie">بني خيار، نابل، تونس</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-cardBg border-t border-gray-800 text-center text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 <span data-ar="مجد الدين سوسي" data-fr="Majd Eddine Soussi">مجد الدين سوسي</span>. <span data-ar="جميع الحقوق محفوظة." data-fr="Tous droits réservés.">جميع الحقوق محفوظة.</span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Language Toggle -->
+    <script>
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'fr' : 'ar';
+            const htmlTag = document.documentElement;
+            
+            if (currentLang === 'fr') {
+                htmlTag.setAttribute('lang', 'fr');
+                htmlTag.setAttribute('dir', 'ltr');
+                document.getElementById('langText').innerText = 'العربية';
+            } else {
+                htmlTag.setAttribute('lang', 'ar');
+                htmlTag.setAttribute('dir', 'rtl');
+                document.getElementById('langText').innerText = 'Français';
+            }
+
+            // Swap all translatable texts
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.innerText = text;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
